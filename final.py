@@ -206,7 +206,7 @@ print(emotion)
 
 #GEMINI
 
-genai.configure(api_key="AIzaSyBLZM1HxxFCMIYaptlX-bb2-XIRy6ZMWX0")
+genai.configure(api_key="ADD_YOUR_API_KEY")
 
 # Choose Gemini 1.5 Flash
 model_ai = genai.GenerativeModel("models/gemini-1.5-flash")  # Updated model name
@@ -367,7 +367,7 @@ enhanced_caption = f"{caption} [Emotion: {emotion}]"
 print(emotion)
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyBfD9oK4VjalvUNLnehXzEx_zDlPlCmhCY")
+genai.configure(api_key="ADD_YOUR_API_KEY")
 
 # Choose Gemini 1.5 Flash
 model_ai = genai.GenerativeModel("models/gemini-1.5-flash")  # Updated model name
@@ -390,7 +390,7 @@ torch.cuda.empty_cache()
 processor = Blip2Processor.from_pretrained("Mediocreatmybest/blip2-opt-2.7b_8bit")
 model = Blip2ForConditionalGeneration.from_pretrained("Mediocreatmybest/blip2-opt-2.7b_8bit", device_map="auto")
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-genai.configure(api_key="AIzaSyBLZM1HxxFCMIYaptlX-bb2-XIRy6ZMWX0")
+genai.configure(api_key="ADD_YOUR_API_KEY")
 model_ai = genai.GenerativeModel("models/gemini-1.5-flash")
 
 !pip install google-generativeai
